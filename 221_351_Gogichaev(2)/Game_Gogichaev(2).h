@@ -4,6 +4,8 @@
 #include <string>
 #include <cstdlib>
 #include <algorithm>
+#include <fstream>
+
 
 // Характеристики игрока
 typedef struct Gamer {
@@ -18,6 +20,7 @@ typedef struct Gamer {
 	int additional_cube; // доп. кубик
 	int building_tokens; // жетоны зданий
 	bool has_adviser; // советник
+	bool plus_two; // советник
 	int military_register; // значение воинского реестра
 	int victory_points; // победные очки
 	std::vector<std::string> buildings; // вектор построек

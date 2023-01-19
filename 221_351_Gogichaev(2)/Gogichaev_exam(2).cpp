@@ -342,7 +342,7 @@ void Game_Gogichaev::phase246_advisor()
 			if (this->gamers[g].cube_3 != 0) std::cout << "Cube 3: " << this->gamers[g].cube_3 << std::endl;
 			if (this->gamers[g].has_additional_cube) std::cout << "Additional cube: " << this->gamers[g].additional_cube << std::endl;
 			if (this->gamers[g].has_adviser) std::cout << "Royal adviser: " << this->gamers[g].additional_cube << std::endl;
-			if (this->gamers[g].has_plus_two) std::cout << "+2: " << "yes" << std::endl;
+			if (this->gamers[g].plus_two) std::cout << "+2: " << "yes" << std::endl;
 			while (true)
 			{
 				// выбор
@@ -374,7 +374,7 @@ void Game_Gogichaev::phase246_advisor()
 					if (choice == "cube2") { sum_points += this->gamers[g].cube_2; this->gamers[g].cube_2 = 0; }
 					if (choice == "cube3") { sum_points += this->gamers[g].cube_3; this->gamers[g].cube_3 = 0; }
 					if (choice == "add_cube") { sum_points += this->gamers[g].additional_cube; this->gamers[g].has_additional_cube = false; }
-					if (choice == "+2") { sum_points += 2; this->gamers[g].has_plus_two = false; }
+					if (choice == "+2") { sum_points += 2; this->gamers[g].plus_two = false; }
 				}
 				if (sum_points != adviser_number)
 				{
